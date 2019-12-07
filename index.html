@@ -12,6 +12,7 @@ This project uses HTML, JS, and CSS to create a timer with video and sound.-->
 </head>
 <body>
 
+<h1>Mindful Meditation</h1>
 <!--App begins here.-->
     <div class="app">
     
@@ -44,11 +45,18 @@ This project uses HTML, JS, and CSS to create a timer with video and sound.-->
             <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
             </svg>
-
-    <!--This section is for the time display.-->      
-            <h3 class="time-display">0:00</h3>
         </div>
-
+           <svg  class= "replay"  height="20px" version="1.1" viewBox="0 0 16 20" width="16px" xmlns="http://www.w3.org/2000/svg" 
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#F8F8FF" id="Icons-AV" transform="translate(-2.000000, -127.000000)"><g id="replay" transform="translate(2.000000, 127.000000)"><path d="M8,4 L8,0 L3,5 L8,10 L8,6 C11.3,6 14,8.7 14,12 C14,15.3 11.3,18 8,18 C4.7,18 2,15.3 2,12 L0,12 C0,16.4 3.6,20 8,20 C12.4,20 16,16.4 16,12 C16,7.6 12.4,4 8,4 L8,4 Z" id="Shape"/></g></g></g></svg>
+        
+        <!--This section is for the time display.--> 
+        <br>
+        <br>     
+            <h3 class="time-display">0:00</h3>
+            
+        
+  
+        
 <!--This section is for all of the sounds.-->
 
         <div class="sound">
@@ -57,6 +65,9 @@ This project uses HTML, JS, and CSS to create a timer with video and sound.-->
             </button>
             <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
                 <img src="./svg/beach.svg" alt="beach"/>
+            </button>
+            <button data-sound="./sounds/birds.mp3" data-video="./video/birds.mp4">
+                <img src="./svg/birds.svg" alt="beach"/>
             </button>
         </div>
 

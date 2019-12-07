@@ -4,6 +4,7 @@
 const app = () => {
     const song = document.querySelector('.song'); 
     const play = document.querySelector('.play'); 
+    const replay = document.querySelector('.replay'); 
     const outline = document.querySelector('.moving-outline circle');
     const video = document.querySelector('.video-container video');  
 
@@ -39,6 +40,19 @@ const app = () => {
         checkPlaying(song);
     });
 
+    replay.addEventListener("click", function() {
+        restartSong(song);
+    });
+
+    // Restart song
+    const restartSong = song =>{
+    let currentTime = song.currentTime;
+    song.currentTime = 0;
+    
+
+}
+
+
     //Selecting the durations.
     timeSelect.forEach(option =>{
     option.addEventListener('click', function(){
@@ -59,7 +73,15 @@ const checkPlaying = song => {
         video.pause();
         play.src = "./svg/play.svg";
     }
+    if(song.stop) {
+        video.stop();
+        song.stop();
+        play.src = "./svg/replay.svg";
+    }
+    
     };
+
+    
 
 //Adding animation to the circle
     song.ontimeupdate = () => {
@@ -80,8 +102,12 @@ const checkPlaying = song => {
             song.currentTime = 0; 
             play.src = '/svg/play.svg'
             video.pause();
-        }
-    };
+        } 
+
+          };
 };
 
 app();
+
+
+
