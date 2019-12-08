@@ -51,8 +51,6 @@ const app = () => {
     
 
 }
-
-
     //Selecting the durations.
     timeSelect.forEach(option =>{
     option.addEventListener('click', function(){
@@ -89,6 +87,12 @@ const checkPlaying = song => {
         let elapsed = defaultDuration - currentTime;
         let seconds = Math.floor(elapsed % 60);
         let minutes = Math.floor(elapsed / 60);
+        if(seconds < 10){ 
+            seconds = "0"+seconds;
+            } 
+            if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
 
         //Animate the circle.
         let progress = outlineLength - (currentTime / defaultDuration) * outlineLength;
