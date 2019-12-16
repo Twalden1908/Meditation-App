@@ -12,37 +12,37 @@ This project uses HTML, JS, and CSS to create a timer with video and sound.-->
 </head>
 <body>
 
-<h1>Mindful Meditation</h1>
+<h1 class = "title col-xs-6 col-sm-4">Mindful Meditation</h1>
 <!--App begins here.-->
-    <div class="app">
+    <div class="app col-xs-6 col-sm-4">
     
     <!--Video that will be playing on a loop in the background-->
-        <div class="video-container">
+        <div class="video-container col-xs-6 col-sm-4 " >
             <video loop>
-                <source class = "video" src="./video/birds.mp4" type="video/mp4"/>
+                <source class = "video col-xs-6 col-sm-4" src="./video/birds.mp4" type="video/mp4"/>
             </video>
         </div>
 
     <!--This section is for time selection.-->
-        <div class="timer">
+        <div class="timer col-xs-6 col-sm-4">
             <button data-time="120">2 Minutes</button>
             <button data-time="300">5 Minutes</button>
             <button data-time="600">10 Minutes</button>
         </div>
 
     <!--This section is for the play button and all of its features.-->
-        <div class="player">
+        <div class="player col-xs-6 col-sm-4">
             <audio class="song">
                 <source src="./sounds/birds.mp3">
             </audio>
 
-            <img src="./svg/play.svg" alt="play" class="play"/>
+            <img src="./svg/play.svg" alt="play" class="play col-xs-6 col-sm-4"/>
 
-            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="track-outline col-xs-6 col-sm-4" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
             </svg>
 
-            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="moving-outline col-xs-6 col-sm-4" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
             </svg>
         </div>
@@ -52,14 +52,14 @@ This project uses HTML, JS, and CSS to create a timer with video and sound.-->
         <!--This section is for the time display.--> 
         <br>
         <br>     
-            <h3 class="time-display">00:00</h3>
+            <h3 class="time-display col-xs-6 col-sm-4">00:00</h3>
             
         
   
         
 <!--This section is for all of the sounds.-->
 
-        <div class="sound">
+        <div class="sound col-xs-12 col-md-8">
             <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
                 <img src="./svg/rain.svg" alt="rain"/>
             </button>
